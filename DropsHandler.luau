@@ -1,8 +1,10 @@
 local TweenService = game:GetService("TweenService")
 local DebrisService = game:GetService("Debris")
-local UIEffects = require(game:GetService("ReplicatedStorage").Modules.UI.UIEffects)
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local PickupRemote = game:GetService("ReplicatedStorage").Remotes.Pickup
+local UIEffects = require(ReplicatedStorage.Modules.UI.UIEffects)
+
+local PickupRemote = ReplicatedStorage.Remotes.Pickup
 
 -- PARAMETERS
 local DROP_LIFETIME = 20
